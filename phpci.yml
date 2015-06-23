@@ -3,7 +3,7 @@ build_settings:
         - "vendor"
         - "bin"
         - "app"
- 	verbose: true
+verbose: true
 setup:
     composer:
         action: "install"
