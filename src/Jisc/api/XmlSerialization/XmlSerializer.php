@@ -14,7 +14,6 @@ namespace Jisc\api\XmlSerialization;
 
 /**
  * Class XmlSerializer
- * @package Jisc\api\XmlSerialization
  */
 class XmlSerializer
 {

@@ -13,7 +13,6 @@ namespace Jisc\api\XmlSerialization;
 
 /**
  * Class ClassMeta
- * @package Jisc\api\XmlSerialization
  */
 class ClassMeta
 {

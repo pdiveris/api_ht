@@ -19,11 +19,16 @@ namespace Jisc\api;
 
 /**
  * Class Helpers
- * @package Jisc
  */
 class Helpers
 {
 
+  /**
+   * @param $var
+   * @param bool $indent
+   * @param int $i
+   * @return string
+   */
   public static function myXMLEncode($var, $indent = true, $i = 0)
   {
     $version = "1.0";
@@ -188,8 +193,10 @@ class Helpers
   }
 
   /**
+   * Create a preview URL based onthe first viewable bitstream
+   *
    * @param $bitstreams
-   * @return string
+   * @return mixed|string
    */
   public static function mainPreviewUrl( $bitstreams) {
     if ($bitstreams) {
@@ -216,6 +223,8 @@ class Helpers
   }
 
   /**
+   * As above, tell us the Mime
+   *
    * @param array $bitstreams
    * @return string
    */
@@ -242,6 +251,8 @@ class Helpers
   }
 
   /**
+   * Produce a human readable Mime
+   *
    * @param string $mime
    * @return string
    */

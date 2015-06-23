@@ -13,7 +13,6 @@ namespace Jisc\api\XmlSerialization;
 
 /**
  * Class Annotation
- * @package Jisc\api\XmlSerialization
  */
 class Annotation
 {

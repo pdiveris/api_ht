@@ -21,7 +21,7 @@ namespace Jisc\api\Service\Hairdressing\Db\Models;
  * @author Petros Diveris
  *
  */
-class NodeType extends extends \Jisc\api\Service\Hairdressing\Db\JiscDbModel
+class NodeType extends \Jisc\api\Service\Hairdressing\Db\JiscDbModel
 {
     /**
      * The database table used by the model.

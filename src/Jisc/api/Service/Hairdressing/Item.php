@@ -320,7 +320,7 @@ class Item extends DrupalApi
     if ($contentTypePage->getItems() > 0) {
 
       $item = $contentTypePage->getItems()[0];
-      $metaData = new \MIMAS\Service\Hairdressing\Metadata((array)$item);
+      $metaData = new \Jisc\api\Service\Hairdressing\Metadata((array)$item);
 
       $this->metadata = $metaData;
     }

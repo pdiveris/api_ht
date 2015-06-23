@@ -6,11 +6,16 @@
  * Time: 13:19
  */
 
-namespace Bentleysoft\ES;
-
+namespace Jisc\ES;
+/**
+ * Class Service
+ * @package Jisc\ES
+ */
 class Service
 {
   /**
+   * Browse the ES based on some ctiteria
+   *
    * @param int $from
    * @param int $size
    * @param string $pattern
@@ -170,10 +175,15 @@ class Service
     return ($result);
   }
 
-
   /**
-  * Get the "mapped" resources - the main bit of the beast...
-  */
+   * Get the "mapped" resources - the main bit of the beast...
+
+   * @param int $from
+   * @param int $size
+   * @param string $pattern
+   * @return mixed
+   * @throws \Exception
+   */
   public static function mapped($from = 0, $size = 20, $pattern = '*')
   {
 
@@ -226,43 +236,11 @@ class Service
     return ($result);
 
   }
-  
 
   /**
-  * Get the "mapped" resources - the main bit of the beast...
-  */
-  public static function mappedX($from = 0, $size = 20, $pattern = '*')
-  {
-
-    $searchParams['index'] = 'ciim';
-
-    $searchParams['size'] = $size;
-    $searchParams['from'] = $from;
-
-    $searchParams['sort'] = array(
-      /*
-      '_type:desc',
-      'summary_title:asc'
-      */
-      'processed:desc'
-    ,
-      'edited:asc'
-
-    );
-
-    $searchParams['body']['query']['wildcard']['edited'] = "yes";
-    /// $searchParams['body']['query']['wildcard']['summary_title'] = "*$pattern*";
-
-
-    $result = \Es::search($searchParams);
-
-    //$searchParams['id'] = 'ht-node/805';
-    //$searchParams['type'] = 'collection';
-    // $result = Es::get($searchParams);
-
-    return ($result);
-  }
-
+   * Get resources of a certain LD code
+   * It's a stub!
+   */
   public static function codeH()
   {
 
@@ -288,7 +266,11 @@ class Service
     var_dump($result);
   }
 
-
+  /**
+   * Get an item from the ES by id
+   * @param $id
+   * @return mixed
+   */
   public static function get($id) {
     $id = str_replace('/', '', $id);
     $searchParams = array('index'=>'ciim', 'id'=>$id, 'type'=>'learning resource');
@@ -298,6 +280,10 @@ class Service
   }
 
   /**
+   * Fetch the 'orphan' items
+   * That's method that was used just ince to tag items that had no LD codes
+   * Still, it shows how to just that
+   *
    * @param int $from
    * @param int $size
    * @return array

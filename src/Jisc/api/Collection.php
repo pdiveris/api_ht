@@ -18,7 +18,6 @@ namespace Jisc\api;
 
 /**
  * Class Collection
- * @package JISC
  */
 class Collection implements \JsonSerializable, \IteratorAggregate
 {

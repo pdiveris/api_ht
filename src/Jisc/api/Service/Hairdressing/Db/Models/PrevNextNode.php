@@ -22,7 +22,7 @@ namespace Jisc\api\Service\Hairdressing\Db\Models;
  * @author Petros Diveris
  *
  */
-class PrevNextNode extends extends \Jisc\api\Service\Hairdressing\Db\JiscDbModel
+class PrevNextNode extends \Jisc\api\Service\Hairdressing\Db\JiscDbModel
 {
     /**
      * The database table used by the model.

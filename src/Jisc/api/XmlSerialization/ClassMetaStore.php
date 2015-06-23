@@ -13,7 +13,6 @@ namespace Jisc\api\XmlSerialization;
 
 /**
  * Class ClassMetaStore
- * @package Jisc\api\XmlSerialization
  */
 class ClassMetaStore
 {

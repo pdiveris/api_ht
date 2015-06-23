@@ -14,7 +14,6 @@ namespace Jisc\api\XmlSerialization;
 
 /**
  * Class SchemaGenerator
- * @package Jisc\Api\XmlSerialization
  */
 class SchemaGenerator
 {

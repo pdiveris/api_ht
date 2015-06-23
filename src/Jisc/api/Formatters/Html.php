@@ -17,7 +17,6 @@ namespace Jisc\api\Formatters;
 
 /**
  * Class Html
- * @package Jisc\api\Formatters
  */
 class Html
 {

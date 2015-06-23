@@ -17,11 +17,12 @@ namespace Jisc\api\Service\Hairdressing\Db\Models;
 
 /**
  * Class NodeRevision
+ *
  * This models the node_revisions table as defined in Drupal 6.x
  * @author Petros Diveris
  *
  */
-class NodeRevision extends extends \Jisc\api\Service\Hairdressing\Db\JiscDbModel
+class NodeRevision extends  \Jisc\api\Service\Hairdressing\Db\JiscDbModel
 {
     /**
      * The database table used by the model.

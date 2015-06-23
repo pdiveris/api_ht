@@ -19,7 +19,6 @@ namespace Jisc\api\Schemas\DublinCore;
 /**
  * Class Terms
  *
- * @package Jisc\DublinCore
  * @version 1.0
  * @specification 1.1
  * @author Petros Diveris

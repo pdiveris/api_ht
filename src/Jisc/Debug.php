@@ -17,7 +17,7 @@ namespace Jisc;
 
 /**
  * Class Debug
- * @package MIMAS
+ * @package HT_Api
  */
 class Debug
 {
