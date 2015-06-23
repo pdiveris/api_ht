@@ -1,0 +1,33 @@
+{
+    "name": "jisc/ht",
+    "description": "The Hairdressing Training REST API",
+    "license": "MIT",
+    "homepage": "http://bentleysoft.com/apis/ht",
+    "support": {
+        "issues": "https://bitbucket.org/pdiveris/api_hairdressing/issues",
+        "source": "https://bitbucket.org/pdiveris/api_hairdressing"
+    },
+    "authors": [
+        {
+            "name": "Petros Diveris",
+            "email": "petros.diveris@jisc.ac.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "5.0.*",
+        "illuminate/support": "5.0.*",
+        "nesbot/carbon": "~1.19"
+    },
+    "autoload": {
+        "psr-0": {
+            "Jisc": "src/"
+        }
+    },
+    "suggest": {
+        "illuminate/database": "Required to use the database cache driver (5.2.*).",
+        "illuminate/filesystem": "Required to use the file cache driver (5.2.*).",
+        "illuminate/redis": "Required to use the redis cache driver (5.2.*)."
+    },
+    "minimum-stability": "dev"
+}
