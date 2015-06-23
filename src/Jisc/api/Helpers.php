@@ -1,22 +1,20 @@
 <?php
 /**
- * MIMAS API
+ * JISC APIs
  *
  * Helpers
  *
- * Various Helpers. Currently just a wrapper around Selene XML
+ * Various Helpers. 
  *
  * @package      MIMAS
  * @subpackage
  * @category     API
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  * @todo         Implement XML serialisation as an injectable dependency
  * @todo         Write unit tests for XML encoding
  */
 namespace Jisc\api;
-
-use \Selene\Components\Xml\Writer;
 
 /**
  * Class Helpers
@@ -24,17 +22,6 @@ use \Selene\Components\Xml\Writer;
  */
 class Helpers
 {
-  /**
-   * XML encoder wrapper method
-   * @param $object
-   * @return string
-   */
-  public static function xmlEncode($object)
-  {
-    $writer = new Writer(new \Selene\Components\Xml\Normalizer\BobNormalizer());
-    return $writer->dump($object);
-  }
-
 
   public static function myXMLEncode($var, $indent = true, $i = 0)
   {
