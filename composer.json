@@ -1,5 +1,5 @@
 {
-    "name": "jisc/ht",
+    "name": "jisc/ht_api",
     "description": "Jisc Hairdressing Training REST API",
     "license": "MIT",
     "homepage": "http://ht.api.bentleysoft.com/docs",
