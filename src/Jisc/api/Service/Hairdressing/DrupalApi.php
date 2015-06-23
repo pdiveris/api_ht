@@ -6,14 +6,14 @@
  *
  * Base class for Item, Community, Collection, Bitstream and Metadata
  *
- * @package      MIMAS
+ * @package      API
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing;
+namespace Jisc\api\Service\Hairdressing;
 
 /**
  *
@@ -22,13 +22,13 @@ namespace MIMAS\Service\Hairdressing;
  * Date: 02/06/2014
  * Time: 14:03
  */
-use MIMAS\Service\Context;
+use Jisc\api\Service\Context;
 
 /**
  * Class DatabaseApi
  * @package MIMAS\Service\Hairdressing
  */
-class DrupalApi implements \MIMAS\Service\RepositoryInterface, \JsonSerializable, \IteratorAggregate
+class DrupalApi implements \Jisc\api\Service\RepositoryInterface, \JsonSerializable, \IteratorAggregate
 {
   /**
    * servicePoint
@@ -105,7 +105,7 @@ class DrupalApi implements \MIMAS\Service\RepositoryInterface, \JsonSerializable
          */
         if (property_exists($this, $key)) {
           $singKey = $key <> 'metadata' ? str_singular($key) : 'metadata'; // this is to avoid the conversion of metadata to metadatum
-          $className = '\\MIMAS\\Service\\Hairdressing\\' . studly_case($singKey); // studly case means 'some_array' gets converted 'SomeArray'
+          $className = '\\Jisc\\api\\Service\\Hairdressing\\' . studly_case($singKey); // studly case means 'some_array' gets converted 'SomeArray'
 
           // right. if this is an object (i.e. a Bitstream or Metadata) then create it
           if (class_exists(studly_case($className))) {
@@ -209,7 +209,7 @@ class DrupalApi implements \MIMAS\Service\RepositoryInterface, \JsonSerializable
    */
   public function all($fields = array())
   {
-    $class = '\MIMAS\Service\Hairdressing\\' . self::$model;
+    $class = '\Jisc\api\Service\Hairdressing\\' . self::$model;
 
     if (self::$model == 'Item') {
       /************************************ ITEM **********************************************************/

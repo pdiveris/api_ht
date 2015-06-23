@@ -6,16 +6,16 @@
  *
  * This model deals with the Drupal twisted tree representation
  *
- * @package      MIMAS
+ * @package      API
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing\Db\Models;
+namespace Jisc\api\Service\Hairdressing\Db\Models;
 
-use MIMAS\Service\Hairdressing\DrupalApi;
+use Jisc\api\Service\Hairdressing\DrupalApi;
 
 /**
  * Class Node
@@ -23,7 +23,7 @@ use MIMAS\Service\Hairdressing\DrupalApi;
  *
  * @author Petros Diveris
  */
-class Node extends \MIMAS\Service\Hairdressing\Db\JorumDbModel
+class Node extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
 {
     /**
      * The database table used by the model.

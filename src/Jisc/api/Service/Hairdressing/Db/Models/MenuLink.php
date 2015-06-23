@@ -6,14 +6,14 @@
  *
  * This model deals with the Drupal twisted tree representation
  *
- * @package      MIMAS
+ * @package      API
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing\Db\Models;
+namespace Jisc\api\Service\Hairdressing\Db\Models;
 
 /**
  * Class MenuLink
@@ -21,7 +21,7 @@ namespace MIMAS\Service\Hairdressing\Db\Models;
  * @author Petros Diveris
  *
  */
-class MenuLink extends \MIMAS\Service\Hairdressing\Db\JorumDbModel
+class MenuLink extends extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
 {
     /**
      * The database table used by the model.

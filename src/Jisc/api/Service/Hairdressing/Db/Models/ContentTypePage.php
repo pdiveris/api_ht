@@ -7,14 +7,14 @@
  * This model deals with the Drupal 6.x Custom Fields
  * It is used for the dc.attributes and any other extra fields we need to cater for
  *
- * @package      MIMAS
+ * @package      API
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing\Db\Models;
+namespace Jisc\api\Service\Hairdressing\Db\Models;
 
 /**
  * Class ContentTypePage
@@ -27,7 +27,7 @@ namespace MIMAS\Service\Hairdressing\Db\Models;
  * @author Petros Diveris
  *
  */
-class ContentTypePage extends \MIMAS\Service\Hairdressing\Db\JorumDbModel
+class ContentTypePage extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
 {
     /**
      * The database table used by the model.

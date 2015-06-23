@@ -1,11 +1,11 @@
 <?php
 /**
  * Enforce at least the following three methods
- * @package      MIMAS
+ * @package      API
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  * Created by PhpStorm.
  * User: pedro
@@ -13,11 +13,11 @@
  * Time: 14:37
  */
 
-namespace MIMAS\Service;
+namespace Jisc\api\Service;
 
 /**
  * Interface RepositoryInterface
- * @package MIMAS\Service
+ * @package Jisc\API\Service
  */
 interface RepositoryInterface
 {

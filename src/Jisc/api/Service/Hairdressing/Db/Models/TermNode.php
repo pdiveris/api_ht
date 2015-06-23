@@ -6,14 +6,14 @@
  *
  * Link Nodes to Terms. We use this to count Nodes that constitute 'Guides' etc.
  *
- * @package      MIMAS
+ * @package      API
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing\Db\Models;
+namespace Jisc\api\Service\Hairdressing\Db\Models;
 
 /**
  * Class TermNode
@@ -22,7 +22,7 @@ namespace MIMAS\Service\Hairdressing\Db\Models;
  * @author Petros Diveris
  *
  */
-class TermNode extends \MIMAS\Service\Hairdressing\Db\JorumDbModel
+class TermNode extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
 {
     /**
      * The database table used by the model.

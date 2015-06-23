@@ -13,15 +13,15 @@
  * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing;
+namespace Jisc\api\Service\Hairdressing;
 
-use MIMAS\Service\Hairdressing\Db\Models\ContentTypePage;
-use MIMAS\Service\Hairdressing\Db\Models\MenuLink;
+use Jisc\api\Service\Hairdressing\Db\Models\ContentTypePage;
+use Jisc\api\Service\Hairdressing\Db\Models\MenuLink;
 
 /**
  *
  * Class Item
- * @package MIMAS\Service\Hairdressing
+ * @package Jisc\api\Service\Hairdressing
  *
  */
 class Item extends DrupalApi
@@ -202,6 +202,60 @@ class Item extends DrupalApi
   public function setHandle($handle = '')
   {
     $this->handle = $handle;
+  }
+
+  /**
+   * Getter for name
+   * @return string
+   */
+  public function getName() 
+  {
+    return $this->name;
+  }
+
+  /**
+   * Setter for name
+   * @param string $name
+   */
+  public function setName($name = '')
+  {
+    $this->name = $name;
+  }
+
+ /**
+   * Getter for type
+   * @return string
+   */
+  public function getType() 
+  {
+    return $this->type;
+  }
+
+  /**
+   * Setter for type
+   * @param string $type
+   */
+  public function setType($type = '')
+  {
+    $this->type = $type;
+  }
+
+ /**
+   * Getter for link
+   * @return string
+   */
+  public function getLink() 
+  {
+    return $this->link;
+  }
+
+  /**
+   * Setter for link
+   * @param string $link
+   */
+  public function setLink($link = '')
+  {
+    $this->link = $link;
   }
 
   /**

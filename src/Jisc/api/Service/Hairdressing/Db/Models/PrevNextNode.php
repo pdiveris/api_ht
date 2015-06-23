@@ -6,22 +6,23 @@
  *
  * Wizard kind of navigation from node to node (back and forth)
  *
- * @package      MIMAS
+ * @package      API
  * @subpackage   Service
  * @category     API
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing\Db\Models;
+namespace Jisc\api\Service\Hairdressing\Db\Models;
 
 /**
  * Class PrevNextNode
  * This models the previous_next_node wizzardy type of relation table as defined in Drupal 6.x
- * @version      0.9.0
+ * @version      1.0.0
  * @author Petros Diveris
  *
  */
-class PrevNextNode extends \MIMAS\Service\Hairdressing\Db\JorumDbModel
+class PrevNextNode extends extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
 {
     /**
      * The database table used by the model.

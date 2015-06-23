@@ -7,14 +7,14 @@
  * A Taxonomy-related module.
  * The basic "out of the box" functionality is to provide a listing of vocabulary's taxonomy terms at taxonomy/vid.
  *
- * @package      MIMAS
+ * @package      API
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing\Db\Models;
+namespace Jisc\api\Service\Hairdressing\Db\Models;
 
 /**
  * Class VocabularyNodeType
@@ -23,7 +23,7 @@ namespace MIMAS\Service\Hairdressing\Db\Models;
  * @author Petros Diveris
  *
  */
-class VocabularyNodeType extends \MIMAS\Service\Hairdressing\Db\JorumDbModel
+class VocabularyNodeType extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
 {
     /**
      * The database table used by the model.
