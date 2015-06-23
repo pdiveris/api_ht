@@ -7,6 +7,10 @@ class Expressive extends \Cartalyst\NestedSets\Nodes\EloquentNode
 {
     private $media;
 
+    /**
+    * Constructor
+    * @param mixed $attributes
+    */
     public function __construct(array $attributes = array())
     {
         parent::__construct($attributes);
@@ -39,6 +43,11 @@ class Expressive extends \Cartalyst\NestedSets\Nodes\EloquentNode
         return 'WIDGETTRANSLATED';
     }
 
+   /**
+    * Get a title translated to a language
+    * @param string $lang
+    * @return string $title
+    */
     public function getTitleTranslated($lang)
     {
         $translation = ContentTranslated::where('content_id', '=', $this->id)->where('lang', '=', $lang)->first();
@@ -53,6 +62,10 @@ class Expressive extends \Cartalyst\NestedSets\Nodes\EloquentNode
         return $title;
     }
 
+   /**
+    * Generate a URL from the title
+    * @return string $url
+    */
     public function getUrlTitle()
     {
         $res = \DB::select("select fn_urltitle('" . $this->title . "') as fn_urltitle");
@@ -78,6 +91,10 @@ class Expressive extends \Cartalyst\NestedSets\Nodes\EloquentNode
 
     }
 
+   /**
+    * Associated media
+    * @return mixed MediaView
+    */
     public function media()
     {
         $x = $this->hasMany('MediaView', 'id');

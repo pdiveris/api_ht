@@ -508,6 +508,10 @@ class Bitstream extends DrupalApi
     }
   }
 
+ /**
+  * Get preview url
+  * @return string url
+  */
   public function getPreviewUrl() {
     $url = '';
     switch ($this->getBundleName()) {

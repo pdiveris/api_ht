@@ -16,6 +16,10 @@ class Test {
     return $next($request);
   }
 
+ /**
+  * Sanity check function for build system, sillbe deleted
+  * @return string $hello
+  */
   public function hello() {
     return 'hello';
   }

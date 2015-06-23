@@ -16,6 +16,9 @@ class TestFixture extends \PHPUnit_Framework_TestCase
 {
     private $saveTz;
 
+   /**
+    * boot function
+    */
     protected function setUp()
     {
         //save current timezone
@@ -24,6 +27,9 @@ class TestFixture extends \PHPUnit_Framework_TestCase
         date_default_timezone_set('Europe/Lisbon');
     }
 
+   /**
+    * Tear down function
+    */
     protected function tearDown()
     {
         date_default_timezone_set($this->saveTz);
