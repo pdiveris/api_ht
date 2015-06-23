@@ -18,7 +18,6 @@ use Jisc\api\Service\Hairdressing\Db\Models\MenuLink;
 
 /**
  * Class Collection
- * @package Jisc\api\Service\Hairdressing
  */
 class Collection extends DrupalApi
 {

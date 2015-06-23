@@ -21,7 +21,6 @@ use Jisc\api\Service\Hairdressing\Metadata;
 
 /**
  * Class Community
- * @package Jisc\api\Service\Hairdressing
  */
 class Community extends DrupalApi
 {

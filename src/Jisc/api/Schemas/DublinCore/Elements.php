@@ -7,7 +7,6 @@
  * Dublin Core Elements
  *
  * @package Api
- * @subpackage DublinCore
  * @category     API
  * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *

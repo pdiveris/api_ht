@@ -26,7 +26,6 @@ use Jisc\api\Service\Context;
 
 /**
  * Class DatabaseApi
- * @package Jisc\api\Service\Hairdressing
  */
 class DrupalApi implements \Jisc\api\Service\RepositoryInterface, \JsonSerializable, \IteratorAggregate
 {

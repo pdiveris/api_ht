@@ -7,7 +7,6 @@
  * Dublin Core Terms we expose and perhaps transform in the API
  *
  * @package Api
- * @subpackage DublinCore
  * @category     API
  * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *

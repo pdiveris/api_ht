@@ -21,7 +21,7 @@ use Jisc\api\Service\Hairdressing\Db\Models\MenuLink;
 /**
  *
  * Class Item
- * @package Jisc\api\Service\Hairdressing
+ * Represents a single item
  *
  */
 class Item extends DrupalApi

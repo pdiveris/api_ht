@@ -16,7 +16,6 @@ namespace Jisc\api\Service\Hairdressing;
 
 /**
  * Class Metadata
- * @package Jisc\api\Service\Hairdressing
  */
 class Metadata extends DrupalApi
 {

@@ -11,7 +11,6 @@ namespace Jisc\api\Schemas\DublinCore;
  * Class Core
  *
  * @package Api
- * @subpackage DublinCore
  * @version 1.0
  * @specification 1.1
  * @author Petros Diveris
