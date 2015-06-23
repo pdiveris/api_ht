@@ -4,7 +4,7 @@
  *
  * Helpers
  *
- * Various Helpers. 
+ * Various Helpers
  *
  * @package      MIMAS
  * @subpackage
