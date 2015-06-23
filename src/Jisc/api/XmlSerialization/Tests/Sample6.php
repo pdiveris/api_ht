@@ -2,7 +2,7 @@
 /**
  * UNIT Test 6
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
 /** Bad: static property */
 class Sample6

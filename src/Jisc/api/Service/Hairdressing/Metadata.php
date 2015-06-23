@@ -5,18 +5,18 @@
  *
  * Community implementation for HT
  *
- * @package      MIMAS
+ * @package      HT_Api
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing;
+namespace Jisc\api\Service\Hairdressing;
 
 /**
  * Class Metadata
- * @package MIMAS\Service\Hairdressing
+ * @package Jisc\api\Service\Hairdressing
  */
 class Metadata extends DrupalApi
 {

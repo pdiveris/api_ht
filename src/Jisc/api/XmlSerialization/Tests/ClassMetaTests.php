@@ -3,13 +3,13 @@
  * Test Meta Class
  *
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
-use MIMAS\XmlSerialization\ClassMeta;
+use Jisc\api\XmlSerialization\ClassMeta;
 
 /**
  * Class ClassMetaTests
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class ClassMetaTests
 {

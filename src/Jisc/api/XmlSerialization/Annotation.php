@@ -4,16 +4,16 @@
  *
  * Jorum API XML serialization - Annotation
  *
- * @package      MIMAS
- * @subpackage   Service
+ * @package      HT_Api
+ * @subpackage   Serialization
  * @category     API
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  */
-namespace MIMAS\XmlSerialization;
+namespace Jisc\api\XmlSerialization;
 
 /**
  * Class Annotation
- * @package MIMAS\XmlSerialization
+ * @package Jisc\api\XmlSerialization
  */
 class Annotation
 {

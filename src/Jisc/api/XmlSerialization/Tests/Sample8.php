@@ -3,11 +3,11 @@
  *  Unit test 8
  *
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
 /**
  * Class Sample8
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class Sample8
 {

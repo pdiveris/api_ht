@@ -6,11 +6,11 @@
  *
  * Single Item held in HT
  *
- * @package      MIMAS
+ * @package      HT_Api
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
 namespace Jisc\api\Service\Hairdressing;
@@ -273,7 +273,7 @@ class Item extends DrupalApi
    * @param array $options
    * @internal param string $outputFormat
    * @internal param string $inputFormat
-   * @return \MIMAS\Service\Jorum\Item $item
+   * @return \Jisc\api\Service\Hairdressing\Item $item
    */
   public static function find($id = '', $options = array())
   {
@@ -298,7 +298,7 @@ class Item extends DrupalApi
 
       $id = str_replace('node/', '', $item->link_path);
 
-      $collection = new \MIMAS\Service\Hairdressing\Collection(array(
+      $collection = new \Jisc\api\Service\Hairdressing\Collection(array(
         'id' => $id,
         'handle' => $item->link_path,
         'link' => self::$servicePoint . '/' . 'collection' . '/' . $id,

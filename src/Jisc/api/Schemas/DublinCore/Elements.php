@@ -1,13 +1,13 @@
 <?php
 /**
- * MIMAS API
+ * Jisc API
  *
  * DublinCore
  *
  * Dublin Core Elements
  *
- * @package      API
- * @subpackage   Classification
+ * @package Api
+ * @subpackage DublinCore
  * @category     API
  * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
@@ -20,7 +20,7 @@ namespace Jisc\api\Schemas\DublinCore;
 /**
  * Class Elements
  *
- * @package Jisc\DublinCore
+ * @package Api\DublinCore
  * @version 1.0
  * @specification 1.1
  * @author Petros Diveris

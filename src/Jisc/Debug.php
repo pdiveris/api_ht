@@ -6,8 +6,8 @@
  *
  * General helper for printing out debug information. Not essential.
  *
- * @package      Jisc
- * @subpackage
+ * @package      HT_Api
+ * @subpackage   Debug
  * @category     Utilities
  * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  * @version      1.0

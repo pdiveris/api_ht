@@ -2,7 +2,7 @@
 /**
  * Unit test 4
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
 /** Bad: duplicate element */
 class Sample4

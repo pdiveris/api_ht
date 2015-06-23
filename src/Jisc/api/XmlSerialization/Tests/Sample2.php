@@ -2,11 +2,11 @@
 /**
  * Unit test2
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
 /**
  * Class Sample2
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class Sample2
 {

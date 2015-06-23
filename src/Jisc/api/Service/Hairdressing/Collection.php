@@ -4,21 +4,21 @@
  *
  * HT implementation of the Collection
  *
- * @package      MIMAS
+ * @package      HT_Api
  * @subpackage   Service
  * @category     API
- * @version      0.9.0
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @version      1.0.0
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\Service\Hairdressing;
+namespace Jisc\api\Service\Hairdressing;
 
-use MIMAS\Service\Hairdressing\Db\Models\ContentTypePage;
-use MIMAS\Service\Hairdressing\Db\Models\MenuLink;
+use Jisc\api\Service\Hairdressing\Db\Models\ContentTypePage;
+use Jisc\api\Service\Hairdressing\Db\Models\MenuLink;
 
 /**
  * Class Collection
- * @package MIMAS\Service\Hairdressing
+ * @package Jisc\api\Service\Hairdressing
  */
 class Collection extends DrupalApi
 {
@@ -170,7 +170,7 @@ class Collection extends DrupalApi
      * @param array $options
      * @internal param string $outputFormat
      * @internal param string $inputFormat
-     * @return \MIMAS\Service\Jorum\Item $item
+     * @return \Jisc\api\Service\Jorum\Item $item
      */
     public static function find($id = '', $options = array())
     {
@@ -189,7 +189,7 @@ class Collection extends DrupalApi
         if ($contentTypePage->getItems() > 0) {
 
             $item = $contentTypePage->getItems()[0];
-            $metaData = new \MIMAS\Service\Hairdressing\Metadata((array)$item);
+            $metaData = new \Jisc\api\Service\Hairdressing\Metadata((array)$item);
 
             $this->metadata = $metaData;
         }

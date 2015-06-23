@@ -11,7 +11,8 @@ use Jisc\api\Service\Jorum\Bitstream;
 
 /**
  * Class Helper
- * @package Bentleysoft
+ * @package HT_Api
+ * @subpackage Helper
  * @author Petros Diveris
  */
 class Helper {

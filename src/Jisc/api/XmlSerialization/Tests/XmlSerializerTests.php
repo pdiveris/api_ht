@@ -2,13 +2,13 @@
 /**
  * XML Serialization tests
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
-use MIMAS\XmlSerialization\XmlSerializer;
+use Jisc\api\XmlSerialization\XmlSerializer;
 
 /**
  * Class XmlSerializerTests
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class XmlSerializerTests
 {

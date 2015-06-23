@@ -2,7 +2,7 @@
 /**
  * Summary for Unit test 7
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
 /**
  * Sample7

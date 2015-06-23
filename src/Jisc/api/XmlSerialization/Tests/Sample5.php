@@ -2,7 +2,7 @@
 /**
  * Unit test
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
 /** Bad: duplicate name-type pair */
 class Sample5

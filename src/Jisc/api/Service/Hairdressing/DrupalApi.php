@@ -6,7 +6,7 @@
  *
  * Base class for Item, Community, Collection, Bitstream and Metadata
  *
- * @package      API
+ * @package      HT_API
  * @subpackage   Service
  * @category     API
  * @version      1.0
@@ -26,7 +26,7 @@ use Jisc\api\Service\Context;
 
 /**
  * Class DatabaseApi
- * @package MIMAS\Service\Hairdressing
+ * @package Jisc\api\Service\Hairdressing
  */
 class DrupalApi implements \Jisc\api\Service\RepositoryInterface, \JsonSerializable, \IteratorAggregate
 {
@@ -290,7 +290,7 @@ class DrupalApi implements \Jisc\api\Service\RepositoryInterface, \JsonSerializa
 
     }
 
-    $ret = new \MIMAS\Service\DataCollection($data, $context);
+    $ret = new \Jisc\api\Service\DataCollection($data, $context);
     return $ret;
   }
 

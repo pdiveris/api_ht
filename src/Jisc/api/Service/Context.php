@@ -7,7 +7,7 @@
  * Provides information about the context of a request that results in a list
  * such as page number, item count etc.
  *
- * @package      API
+ * @package      HT_Api
  * @subpackage   Service
  * @category     API
  * @version      1.0

@@ -2,13 +2,13 @@
 /**
  * Annotation unit tests
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
-use MIMAS\XmlSerialization\Annotation;
+use Jisc\api\XmlSerialization\Annotation;
 
 /**
  * Class AnnotationTests
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class AnnotationTests
 {

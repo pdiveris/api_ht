@@ -4,16 +4,16 @@
  *
  * Jorum API XML serialization - Class Meta Store
  *
- * @package      MIMAS
- * @subpackage   Service
+ * @package      HT_Api
+ * @subpackage   Serialization
  * @category     API
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  */
-namespace MIMAS\XmlSerialization;
+namespace Jisc\api\XmlSerialization;
 
 /**
  * Class ClassMetaStore
- * @package MIMAS\XmlSerialization
+ * @package Jisc\api\XmlSerialization
  */
 class ClassMetaStore
 {

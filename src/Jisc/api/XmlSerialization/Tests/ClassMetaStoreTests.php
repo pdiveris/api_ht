@@ -2,14 +2,14 @@
 /**
  * Test Metastore
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
-use MIMAS\XmlSerialization\ClassMeta;
-use MIMAS\XmlSerialization\ClassMetaStore;
+use Jisc\api\XmlSerialization\ClassMeta;
+use Jisc\api\XmlSerialization\ClassMetaStore;
 
 /**
  * Class ClassMetaStoreTests
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class ClassMetaStoreTests
 {

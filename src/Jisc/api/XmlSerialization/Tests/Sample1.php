@@ -1,13 +1,13 @@
 <?php
 /**
  * Unit test 1
- * namespace MIMAS\XmlSerialization;
+ * namespace Jisc\api\XmlSerialization;
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
 /**
  * Class Sample1
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class Sample1
 {

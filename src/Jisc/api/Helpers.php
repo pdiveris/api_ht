@@ -6,8 +6,8 @@
  *
  * Various Helpers
  *
- * @package      MIMAS
- * @subpackage
+ * @package      HT_Api
+ * @subpackage   
  * @category     API
  * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
@@ -139,7 +139,7 @@ class Helpers
     foreach ($data as $key => $val) {
       $key = str_replace('*', '', $key);
 
-      if (strpos(utf8_decode($key), 'options') == false && strpos(utf8_decode($key), 'MIMAS\Service') == false) { // code specific to the API. refactoring is due
+      if (strpos(utf8_decode($key), 'options') == false && strpos(utf8_decode($key), 'Jisc\api\Service') == false) { // code specific to the API. refactoring is due
 
         if (is_array($val) || is_object($val)) {
           if ($key == '0' || intval($key) > 0) {
@@ -299,93 +299,7 @@ class Helpers
     return $humanMime;
   }
 
-  public static function zip2vfs($bitstream) {
-    $paths = explode('/', str_replace('/retrieve','',  $bitstream->getRetrieveLink()));
-
-    if (count($paths)>2) {
-
-      $root = $paths[1];
-      $packageName = $paths[2];
-
-      $packageRepo =public_path('3rdparty/elfinder/files');
-
-      if (!is_dir( $packageRepo.'/'.$paths[1])) {
-        mkdir("$packageRepo/$root" );
-      }
-      // \PhpConsole::debug("$packageRepo/$root/$packageName");
-      if (!file_exists("$packageRepo/$root".'/'.$packageName.'.zip') || !is_dir("$packageRepo/$root/$packageName")) {
-        $url = 'http://dspace.jorum.ac.uk/rest' . $bitstream->getRetrieveLink();
-        $stream = \MIMAS\Service\Jorum\JorumApi::apiCall($url);
-        file_put_contents("$packageRepo/$root/$packageName".'.zip', $stream);
-
-        if (!is_dir("$packageRepo/$root/$packageName")) {
-          mkdir("$packageRepo/$root/$packageName");
-
-          $zip = new \ZipArchive;
-          $res = $zip->open("$packageRepo/$root/$packageName".'.zip');
-          if ($res === TRUE) {
-            $zip->extractTo("$packageRepo/$root/$packageName");
-            $zip->close();
-          } else {
-          }
-
-
-        } else {
-
-        }
-      }
-
-      return public_path('3rdparty/elfinder/files/'. "$root/$packageName");
-    }
-    return '';
-  }
-
-  /**
-   * Create virtual minisite
-   *
-   * @param $bitstream
-   * @return string
-   * @throws \Exception
-   */
-  public static function site2vfs($bitstream) {  // <--- YOU WANT ALL THE STREAMS Buster!
-    $paths = explode('/', str_replace('/retrieve','',  $bitstream->getRetrieveLink()));
-
-    if (count($paths)>2) {
-
-      $root = $paths[1];
-      $packageName = $paths[2];
-
-      $packageRepo =public_path('3rdparty/elfinder/files');
-
-      if (!is_dir( $packageRepo.'/'.$paths[1])) {
-        mkdir("$packageRepo/$root" );
-      }
-      // \PhpConsole::debug("$packageRepo/$root/$packageName");
-      if (!file_exists("$packageRepo/$root".'/'.$packageName.'.zip') || !is_dir("$packageRepo/$root/$packageName")) {
-        $url = 'http://dspace.jorum.ac.uk/rest' . $bitstream->getRetrieveLink();
-        $stream = \MIMAS\Service\Jorum\JorumApi::apiCall($url);
-        file_put_contents("$packageRepo/$root/$packageName".'.zip', $stream);
-
-        if (!is_dir("$packageRepo/$root/$packageName")) {
-          mkdir("$packageRepo/$root/$packageName");
-
-          $zip = new \ZipArchive;
-          $res = $zip->open("$packageRepo/$root/$packageName".'.zip');
-          if ($res === TRUE) {
-            $zip->extractTo("$packageRepo/$root/$packageName");
-            $zip->close();
-          } else {
-          }
-
-        } else {
-
-        }
-      }
-
-      return public_path('3rdparty/elfinder/files/'. "$root/$packageName");
-    }
-    return '';
-  }
+ 
 
  /**
   * Debug function for the purpose of the great refactoring

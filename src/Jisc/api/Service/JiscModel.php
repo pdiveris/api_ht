@@ -7,7 +7,7 @@
  * Base class for Community, Collection, Item. Metadata and Bitstream
  * It provides JSON serialisation. HTML output as well as an Iterator
  *
- * @package      MIMAS
+ * @package      HT_Api
  * @subpackage   Service
  * @category     API
  * @version      0.9.0

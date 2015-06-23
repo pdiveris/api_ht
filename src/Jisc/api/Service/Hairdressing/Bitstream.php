@@ -6,15 +6,15 @@
  *
  * Representation of anything streamable or downloadable
  *
- * @package      MIMAS
+ * @package      HT_Api
  * @subpackage   Service
  * @category     API
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  */
-namespace MIMAS\Service\Hairdressing;
+namespace Jisc\api\Service\Hairdressing;
 
-use MIMAS\Service\Hairdressing\Db\Models\ContentTypePage;
-use MIMAS\Service\Hairdressing\Db\Models\MenuLink;
+use Jisc\api\Service\Hairdressing\Db\Models\ContentTypePage;
+use Jisc\api\Service\Hairdressing\Db\Models\MenuLink;
 
 /**
  * Created by PhpStorm.
@@ -528,7 +528,7 @@ class Bitstream extends DrupalApi
    * @param array $options
    * @param string $outputFormat
    * @param string $inputFormat
-   * @return \MIMAS\Service\Jorum\Item $item
+   * @return \Jisc\api\Service\Jorum\Item $item
    *
    */
   public static function find($id = '', $options = array(), $outputFormat = '', $inputFormat)

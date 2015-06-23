@@ -1,7 +1,7 @@
 <?php
 /**
  * Enforce at least the following three methods
- * @package      API
+ * @package      HT_Api
  * @subpackage   Service
  * @category     API
  * @version      1.0

@@ -4,17 +4,17 @@
  *
  * Jorum API XML serialization - Schema Generator
  *
- * @package      MIMAS
- * @subpackage   Service
+ * @package      HT_Api
+ * @subpackage   Serialization
  * @category     API
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\XmlSerialization;
+namespace Jisc\api\XmlSerialization;
 
 /**
  * Class SchemaGenerator
- * @package MIMAS\XmlSerialization
+ * @package Jisc\Api\XmlSerialization
  */
 class SchemaGenerator
 {

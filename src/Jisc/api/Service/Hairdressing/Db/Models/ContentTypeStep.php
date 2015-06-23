@@ -26,7 +26,7 @@ namespace Jisc\api\Service\Hairdressing\Db\Models;
  * @author Petros Diveris
  *
  */
-class ContentTypeStep extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
+class ContentTypeStep extends \Jisc\api\Service\Hairdressing\Db\JiscDbModel
 {
     /**
      * The database table used by the model.
@@ -79,7 +79,7 @@ class ContentTypeStep extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
 
     /**
      * Constructor. Check base class for use of attributes.
-     * @see JorumDbModel
+     * @see JiscDbModel
      *
      * @param array $attributes
      */

@@ -23,7 +23,7 @@ namespace Jisc\api\Service\Hairdressing\Db\Models;
  * @author Petros Diveris
  *
  */
-class VocabularyNodeType extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
+class VocabularyNodeType extends \Jisc\api\Service\Hairdressing\Db\JiscDbModel
 {
     /**
      * The database table used by the model.
@@ -55,7 +55,7 @@ class VocabularyNodeType extends \Jisc\api\Service\Hairdressing\Db\JorumDbModel
 
     /**
      * Constructor. Check base class for use of attributes.
-     * @see JorumDbModel
+     * @see JiscDbModel
      *
      * @param array $attributes
      */

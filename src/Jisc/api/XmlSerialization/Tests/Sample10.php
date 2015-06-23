@@ -2,11 +2,11 @@
 /**
  * Uni test 10
  */
-namespace MIMAS\XmlSerialization\Tests;
+namespace Jisc\api\XmlSerialization\Tests;
 
 /**
  * Class Sample10_Granny
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class Sample10_Granny
 {
@@ -61,7 +61,7 @@ class Sample10_Granny
 
 /**
  * Class Sample10_Parent
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class Sample10_Parent extends Sample10_Granny
 {
@@ -70,7 +70,7 @@ class Sample10_Parent extends Sample10_Granny
 
 /**
  * Class Sample10
- * @package MIMAS\XmlSerialization\Tests
+ * @package Jisc\api\XmlSerialization\Tests
  */
 class Sample10 extends Sample10_Parent
 {

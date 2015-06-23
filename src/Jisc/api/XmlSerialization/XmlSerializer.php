@@ -4,17 +4,17 @@
  *
  * Jorum API XML serialization - XML Serializer main class
  *
- * @package      MIMAS
- * @subpackage   Service
+ * @package      HT_Api
+ * @subpackage   Serialization
  * @category     API
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  */
-namespace MIMAS\XmlSerialization;
+namespace Jisc\api\XmlSerialization;
 
 /**
  * Class XmlSerializer
- * @package MIMAS\XmlSerialization
+ * @package Jisc\api\XmlSerialization
  */
 class XmlSerializer
 {

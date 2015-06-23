@@ -1,20 +1,20 @@
 <?php
 /**
- * MIMAS API
+ * Jisc API
  *
  * DublinCore
  *
  * Dublin Core Terms we expose and perhaps transform in the API
  *
- * @package      API
- * @subpackage   Classification
+ * @package Api
+ * @subpackage DublinCore
  * @category     API
  * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  * Will eventually become of the classification term translation engine
  *
  */
-namespace MIMAS\Schemas\DublinCore;
+namespace Jisc\api\Schemas\DublinCore;
 
 /**
  * Class Terms

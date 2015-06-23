@@ -6,7 +6,7 @@
  *
  * Holds a list of Items
  *
- * @package      MIMAS
+ * @package      HT_Api
  * @subpackage   Service
  * @category     API
  * @version      0.9.0
