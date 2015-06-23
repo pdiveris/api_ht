@@ -71,10 +71,8 @@ class TermData extends \Jisc\api\Service\Hairdressing\Db\JiscDbModel
     /**
      * Constructor. Check base class for use of attributes.
      * @see JiscDbModel
-     *
      * @param array $attributes
      */
-
     public function __construct($attributes = array())
     {
         parent::__construct($attributes);
