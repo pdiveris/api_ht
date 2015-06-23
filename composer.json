@@ -1,8 +1,8 @@
 {
     "name": "jisc/ht",
-    "description": "The Hairdressing Training REST API",
+    "description": "Jisc Hairdressing Training REST API",
     "license": "MIT",
-    "homepage": "http://bentleysoft.com/apis/ht",
+    "homepage": "http://ht.api.bentleysoft.com/docs",
     "support": {
         "issues": "https://bitbucket.org/pdiveris/api_hairdressing/issues",
         "source": "https://bitbucket.org/pdiveris/api_hairdressing"
