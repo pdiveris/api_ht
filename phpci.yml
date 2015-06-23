@@ -6,7 +6,7 @@ build_settings:
 verbose: true
 setup:
     composer:
-        action: "install"
+        action: "update"
  
 test:
     php_unit:
