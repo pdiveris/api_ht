@@ -6,25 +6,25 @@
  *
  * Dublin Core Elements
  *
- * @package      MIMAS
+ * @package      API
  * @subpackage   Classification
  * @category     API
- * @author       Petros Diveris <petros.diveris@manchester.ac.uk>
+ * @author       Petros Diveris <petros.diveris@jisc.ac.uk>
  *
  * Will eventually become part of the  classification term translation engine
  *
  */
 
-namespace MIMAS\Schemas\DublinCore;
+namespace Jisc\api\Schemas\DublinCore;
 
 /**
  * Class Elements
  *
- * @package MIMAS\DublinCore
- * @version 0.9.1
+ * @package Jisc\DublinCore
+ * @version 1.0
  * @specification 1.1
  * @author Petros Diveris
- * @copyright MIMAS, 2014
+ * @copyright Jisc, 2015
  *
  * <xs:element name="any" type="SimpleLiteral" abstract="true"/>
  *

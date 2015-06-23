@@ -5,17 +5,16 @@
  * Date: 24/06/2014
  * Time: 15:38
  */
-namespace MIMAS\Schemas\DublinCore;
+namespace Jisc\api\Schemas\DublinCore;
 
 /**
  * Class Core
- * Stub. Will expand in 0.9.1
  *
- * @package MIMAS\DublinCore
- * @version 0.9.1
+ * @package API\DublinCore
+ * @version 1.0
  * @specification 1.1
  * @author Petros Diveris
- * @copyright MIMAS, 2014
+ * @copyright Jisc, 2015
  *
  * <xs:element name="any" type="SimpleLiteral" abstract="true"/>
  *
@@ -113,6 +112,5 @@ class Core
     {
 
     }
-
 
 }

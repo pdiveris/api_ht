@@ -13,6 +13,7 @@
  *
  * @todo         Implement XML serialisation as an injectable dependency
  * @todo         Write unit tests for XML encoding
+ * @version      1.0
  */
 namespace Jisc\api;
 
