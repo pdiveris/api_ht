@@ -1,6 +1,9 @@
 <?php
 class StackTest extends PHPUnit_Framework_TestCase
 {
+    /**
+    * Dummy. My Boot function ;o)
+    */
     public function testPushAndPop()
     {
         $stack = array();

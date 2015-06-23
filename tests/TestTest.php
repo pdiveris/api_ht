@@ -48,6 +48,10 @@ class TestTest extends PHPUnit_Framework_TestCase
     	$this->assertEquals($collection->toJson(), '{"1":"alpha","2":"beta","3":"gamma","4":"delta"}');
     }
 
+   /**
+    * Initialise a \Jisc\api\Service\Context
+    * and check whether we get back what we should
+    */
     public function testJiscContextWithData() {
 	    $context = new \Jisc\api\Service\Context(['limit'=>10, 'offset'=>0, 'totalCount'=>222, 'query'=>'select * where id>1', 'queryDate'=>date('Y-m-d H:i:s')]);
 	    $this->assertEquals($context->getLimit(),10, 'Got correct limit of 10 from Context');
@@ -55,6 +59,10 @@ class TestTest extends PHPUnit_Framework_TestCase
 	    $this->assertEquals($context->getTotalCount(),222, 'Got correct total 222 from Context');
     }
 
+   /**
+    * Initialise a \Jisc\api\Service\Hairdressing\Item
+    * and check whether we get back what we should
+    */
     public function testJiscHTItem() {
 		$item = new \Jisc\api\Service\Hairdressing\Item(['nid'=>22, 'title'=>'The Graduated Bob: Guide', 'type'=>'page' ]);
 		$this->assertEquals($item->getId(),22, 'Item created and returns the correct ID');
