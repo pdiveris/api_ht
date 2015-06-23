@@ -7,7 +7,6 @@ verbose: true
 setup:
     composer:
         action: "update"
- 
 test:
     php_unit:
         config:
